@@ -68,3 +68,21 @@ const reSize = (fontSize, text) => {
     resizeText.style.fontSize = fontSize;
 }
 reSize('5px', 'p');
+// **********************************************
+
+// 1
+const createNew = (newText) => {
+    const paraLi = document.createElement('li');
+    paraLi.id = 'paraLi';
+    const ulElem = document.querySelector('#arguments');
+    ulElem.appendChild(paraLi);
+    paraLi.innerText = newText
+}
+// 2
+createNew('lorem ipsum works great!!!!');
+// **********************************************
+
+// 3 
+const newHeading = (headerSize, someText) => {
+    const newHead = document.createElement()
+}
