@@ -84,5 +84,15 @@ createNew('lorem ipsum works great!!!!');
 
 // 3 
 const newHeading = (headerSize, someText) => {
-    const newHead = document.createElement()
+    const newHead = document.createElement(`h${headerSize}`)
+    newHead.id = 'newHeadId';
+    const ulElem = document.querySelector('#heading');
+    ulElem.appendChild('#newHeadId')
+    
+    const newText = document.createElement(someText);
+    newText.id = '#newTextId';
+    const ulElem2 = document.querySelector('#newHeadId');
+    ulElem2.appendChild('#newTextId';)
 }
+// 4
+newHeading(3, 'hello there')
